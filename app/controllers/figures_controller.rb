@@ -12,7 +12,7 @@ class FiguresController < ApplicationController
     @figure.titles << Title.create(name: params[:title][:name]) if !params[:title][:name].empty?
     @figure.save
 
-    redirect to '/figures/:id'
+    redirect('/figures/:id')
   end
 
   get '/figures' do
