@@ -1,0 +1,8 @@
+<%= @figure.name %>
+
+<p>Landmarks:</p>
+<% @landmarks.each do |landmark| %>
+  <%= landmark.name %>
+<% end %>
+
+<a href=<%= "/figures/#{@figure.id}/edit" %>>Edit Figure</a>
